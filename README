@@ -62,7 +62,6 @@ Options:
                         write a copy of an encrypted wallet with only an empty
                         address, *should* be safe to share when needing help
                         bruteforcing the password
-  --tests               run tests
 
 Dependencies:
 
