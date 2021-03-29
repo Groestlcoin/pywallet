@@ -20,8 +20,6 @@ Options:
   --dumpwithbalance     includes balance of each address in the json dump,
                         takes about 2 minutes per 100 addresses
   --importprivkey=KEY   import private key from vanitygen
-  --importhex           DEPRECATED, useless
-  --datadir=DATADIR     REMOVED OPTION: put full path in the --wallet option
   -w WALLETFILE, --wallet=WALLETFILE
                         wallet filename (defaults to wallet.dat)
   --label=LABEL         label shown in the adress book (defaults to '')
