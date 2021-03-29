@@ -3599,7 +3599,6 @@ if __name__ == '__main__':
 
 	db_dir = ""
 	if options.walletfile:
-		if options.datadir:options.walletfile=options.datadir+os.path.sep+options.walletfile
 		if not os.path.isfile(options.walletfile):
 			print("ERROR: wallet file %s can't be found"%repr(os.path.realpath(options.walletfile)))
 			exit()
