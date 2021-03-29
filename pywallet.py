@@ -3434,12 +3434,6 @@ if __name__ == '__main__':
 	parser.add_option("--importprivkey", dest="key",
 		help="import private key from vanitygen")
 
-	parser.add_option("--importhex", dest="keyishex", action="store_true",
-		help="DEPRECATED, useless")
-
-	parser.add_option("--datadir", dest="datadir",
-		help="REMOVED OPTION: put full path in the --wallet option")
-
 	parser.add_option("-w", "--wallet", dest="walletfile",
 		help="wallet filename (defaults to wallet.dat)",
 		default="")
@@ -3602,12 +3596,6 @@ if __name__ == '__main__':
 
 	if not(options.dcv is None):
 		max_version = 10 ** 9
-
-	if not(options.datadir is None):
-		print("Depreacation")
-		print("  The --datadir option has been deprecated, now the full path of the wallet file should go to --wallet")
-		print("  If you're not sure what to do, concatenating the old --datadir content, then a directory separator, then the old --wallet should do the trick")
-		print("  If not, ask for help in the Pywallet thread: https://bitcointalk.org/index.php?topic=34028")
 
 	db_dir = ""
 	if options.walletfile:
