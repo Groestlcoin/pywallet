@@ -1201,7 +1201,7 @@ def hash_160_to_bc_address(h160, v=None):
 	if v==None:
 		v=network.p2pkh_prefix
 	vh160 = chrsix(v) + h160
-	h = Hash(vh160)
+	h = GroestlHash(vh160)
 	addr = vh160 + h[0:4]
 	return b58encode(addr)
 
